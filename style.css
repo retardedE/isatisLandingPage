@@ -65,23 +65,23 @@ a{
     transition: all 0.2s ease-in-out;
 }
 .navRightSide ul li a:hover{
-    color: var(--thirdColor);
-    border-bottom: 2px solid var(--thirdColor);
+    color: var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
 }
 .navRightSide .contactBtn button{
     height: 50px;
     width: 165px;
     padding: 5px 10px;
     border-radius: 15px;
-    border: 2px solid var(--thirdColor);
+    border: 2px solid var(--mainColor);
     font-weight: bold;
     background: none;
-    color: var(--thirdColor);
+    color: var(--mainColor);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 .navRightSide .contactBtn button:hover{
-    background-color: var(--thirdColor);
+    background-color: var(--mainColor);
     color: white;
 }
 .burgerMenuIcon{
@@ -137,10 +137,10 @@ a{
     width: 125px;
     padding: 5px 10px;
     border-radius: 15px;
-    border: 2px solid var(--thirdColor);
+    border: 2px solid var(--mainColor);
     font-weight: bold;
     background: none;
-    color: var(--thirdColor);
+    color: var(--mainColor);
     cursor: pointer;
     /* transition: all 0.2s ease-in-out; */
 }
@@ -247,6 +247,192 @@ a{
     background-color: var(--mainColor);
     color: white;
 }
+.optionsPreview{
+    padding-top: 20vh !important;
+    padding: var(--sectionPadding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15vh;
+}
+.previewHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.previewHeading h1{
+    font-size: 40px;
+    width: 600px;
+    color: var(--secondColor);
+    margin-bottom: 40px;
+}
+.previewHeading p{
+    width: 900px;
+    color: var(--secondColor);
+}
+.pageOptions{
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+}
+.pageOptions .optionBox{
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.151);
+    min-height: 400px;
+    min-width: 500px;
+    padding: 4vh 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3vh;
+
+}
+.pageOptions .optionBox img{
+    background-color: #fa88245b;
+    padding: 2vh 2vh;
+}
+.pageOptions .optionBox button{
+    height: 55px;
+    width: 160px;
+    background: none;
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.pageOptions .optionBox button:hover{
+    background-color: var(--mainColor);
+    color: white;
+}
+.customersReview{
+    margin-top: 10vh;
+    padding-top: 5vh !important;
+    padding: var(--sectionPadding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+    background-color: #F8FFF7;
+}
+.reviewHeading{
+    display: flex;
+    align-items: center;
+}
+.reviewHeading h1{
+    font-size: 40px;
+    width: 500px;
+    font-weight: bold;
+    text-align: center;
+}
+.reviewBoxes{
+    display: flex;
+    gap: 10vh;
+}
+.reviewBoxes .reviewBox{
+    background-color: white;
+    min-height: 300px;
+    min-width: 500px;
+    padding: 4vh 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.315);
+
+}
+.reviewBox img{
+    height: 50px;
+    border-radius: 50%;
+}
+.upperRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.upperRow i{
+    font-size: 22px;
+    color: var(--mainColor);
+}
+.customerIntels{
+    display: flex;
+    gap: 8px;
+}
+.customerIntels p{
+    font-weight: bold;
+}
+.customerIntels span{
+    color: var(--mainColor);
+}
+.newsLetterAd{
+    padding-top: 10vh !important;
+    padding: var(--sectionPadding);
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+.newsLetterHeading{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+.newsLetterHeading h1{
+    font-size: 40px;
+    text-align: center;
+}
+.newsLetterHeading p{
+    width: 500px;
+    text-align: center;
+}
+.newsLetterInputs{
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+}
+.newsLetterInputs input{
+    width: 600px;
+    height: 55px;
+    padding-left: 40px;
+    border-radius: 30px;
+    background-color: #F2F0F1;
+    border: none;
+    outline: none;
+}
+.newsLetterInputs button{
+    height: 55px;
+    width: 200px;
+    color: white;
+    background-color: var(--mainColor);
+    border: var(--mainColor);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.newsLetterInputs button:hover{
+    background: none;
+    color: var(--mainColor);
+}
+@media only screen and (max-width: 1691px){
+    .pageOptions{
+        flex-direction: column;
+    }
+    .reviewBoxes{
+        flex-direction: column;
+    }
+    .optionBox{
+        min-width: 900px;
+        justify-content: center;
+    }
+    .reviewBox{
+        min-width: 900px;
+        justify-content: center;
+    }
+}
 @media only screen and (max-width: 1633px){
     .pageOpeningView img{
         height: 400px;
@@ -275,6 +461,11 @@ a{
     }
     :root{
         --sectionPadding:3vh 5vh;
+    }
+}
+@media only screen and (max-width: 901px){
+    .previewHeading p{
+        width: 500px;
     }
 }
 @media only screen and (max-width: 860px){
@@ -306,10 +497,80 @@ a{
         text-align: center;
     }
 }
+@media only screen and (max-width: 603px){
+    .previewHeading h1{
+        font-size: 32px;
+        width: 400px;
+    }
+    .reviewHeading h1{
+        font-size: 32px;
+        width: 400px;
+    }
+    .newsLetterHeading h1{
+        font-size: 32px;
+    }
+}
 @media only screen and (max-width: 526px){
     .pageOpeningView h1{
         font-size: 22px;
         width: 300px;
         text-align: center;
+    }
+}
+@media only screen and (max-width: 513px){
+    .previewHeading h1{
+        font-size: 24px;
+        width: 300px;
+    }
+    .reviewHeading h1{
+        font-size: 24px;
+        width: 300px;
+    }
+    .previewHeading p{
+        width: 300px;
+    }
+    .optionBox{
+        min-width: 150px !important;
+        padding: 0 ;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .reviewBox{
+        min-width: 150px !important;
+        padding: 0 ;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .reviewBox .qoutaionMark{
+        display: none;
+    }
+    .reviewBox .customerIntels{
+        flex-direction: column;
+        align-items: center;
+    }
+    .newsLetterHeading p{
+        width: 200px;
+    }
+    .newsLetterInputs{
+        /* width: 350px; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsLetterInputs input{
+        width: 350px;
+    }
+    .newsLetterInputs button{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 383px){
+    .newsLetterInputs input{
+        width: 250px;
+    }
+    .newsLetterInputs button{
+        width: 250px;
     }
 }
