@@ -1,7 +1,8 @@
 :root{
     --mainColor:#049634;
     --secondColor:#04012E;
-    --sectionPadding:3vh;
+    --thirdColor:#579b73;
+    --sectionPadding:1vh 9vh;
 }
 @font-face {
     font-family: Poppins ;
@@ -12,4 +13,76 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Poppins ;
+}
+a{
+    text-decoration: none;
+}
+.pageHeader{
+    padding: var(--sectionPadding) ;
+}
+.navBar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLeftSide{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.navLeftSide img{
+    height: 90px;
+}
+.navLeftSide .logoTitle{
+    display: flex;
+    flex-direction: column;
+}
+.navLeftSide h3{
+    /* margin-bottom: 5px; */
+    font-size: 18px;
+}
+.navLeftSide span{
+    font-size: 10px;
+}
+.navRightSide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+.navRightSide ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.navRightSide ul li a{
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--secondColor);
+    color: #04012E;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+.navRightSide ul li a:hover{
+    color: var(--thirdColor);
+    border-bottom: 2px solid var(--thirdColor);
+}
+.navRightSide .contactBtn button{
+    height: 50px;
+    width: 165px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid var(--thirdColor);
+    font-weight: bold;
+    background: none;
+    color: var(--thirdColor);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.navRightSide .contactBtn button:hover{
+    background-color: var(--thirdColor);
+    color: white;
 }
