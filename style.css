@@ -163,7 +163,6 @@ a{
     font-weight: bold;
     color: var(--secondColor);
     width: 720px;
-    line-height: 80px;
     margin-bottom: 10px;
 }
 .openingLeftSide p{
@@ -416,6 +415,63 @@ a{
 .newsLetterInputs button:hover{
     background: none;
     color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+.pageFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-color: var(--secondColor);
+    min-height: 40vh;
+}
+.pageFooter img{
+    height: 80px;
+}
+.footerContents{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30vh;
+    padding-top: 10vh !important;
+    padding: var(--sectionPadding);
+}
+.footerColumn:first-child{
+    color: #d6d6e6;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.firstColumnItem ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+.firstColumnItem li{
+    color: #d6d6e6;
+    cursor: pointer;
+}
+.footerColumn:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    color: #d6d6e6;
+}
+.footerColumn:last-child .socialIcons{
+    display: flex;
+    gap: 1.5vh;
+}
+.footerColumn:last-child .socialIcons i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.footerEnding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a2a2a7;
 }
 @media only screen and (max-width: 1691px){
     .pageOptions{
@@ -461,6 +517,28 @@ a{
     }
     :root{
         --sectionPadding:3vh 5vh;
+    }
+}
+@media only screen and (max-width: 1177px){
+    .footerContents{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5vh;
+        text-align: center;
+    }
+    .footerColumn:first-child{
+        align-items: center;
+    }
+    .footerColumn:last-child{
+        align-items: center;
+        gap: 2vh;
+        justify-content: center;
+    }
+    .footerEnding{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 @media only screen and (max-width: 901px){
