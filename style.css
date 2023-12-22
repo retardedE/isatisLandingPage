@@ -1,8 +1,8 @@
 :root{
-    --mainColor:#049634;
+    --mainColor:#FA8724;
     --secondColor:#04012E;
     --thirdColor:#579b73;
-    --sectionPadding:1vh 9vh;
+    --sectionPadding:5vh 15vh;
 }
 @font-face {
     font-family: Poppins ;
@@ -17,9 +17,6 @@
 a{
     text-decoration: none;
 }
-.pageHeader{
-    padding: var(--sectionPadding) ;
-}
 .navBar{
     height: 80px;
     width: 100%;
@@ -27,6 +24,7 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: var(--sectionPadding) ;
 }
 .navLeftSide{
     display: flex;
@@ -85,4 +83,233 @@ a{
 .navRightSide .contactBtn button:hover{
     background-color: var(--thirdColor);
     color: white;
+}
+.burgerMenuIcon{
+    display: none;
+    font-size: 32px;
+    color: var(--mainColor);
+}
+.burgerMenu{
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+.unActiveMenu{
+    visibility: hidden;
+    opacity: 0;
+}
+.menuBox{
+    width: 55%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 30px;
+}
+.menuBox .closeTag i{
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--mainColor);
+}
+.menuBox ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+.menuBox ul li a{
+    color: var(--secondColor);
+    font-weight: bold;
+    
+}
+.menuBox .contactBtn button{
+    height: 50px;
+    width: 125px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid var(--thirdColor);
+    font-weight: bold;
+    background: none;
+    color: var(--thirdColor);
+    cursor: pointer;
+    /* transition: all 0.2s ease-in-out; */
+}
+.pageOpeningView{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: var(--sectionPadding) ;
+}
+.openingLeftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.openingLeftSide h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--secondColor);
+    width: 720px;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+.openingLeftSide p{
+    font-size: 16px;
+    width: 650px;
+    color: var(--secondColor);
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+.openingLeftSide button{
+    height: 55px;
+    width: 160px;
+    background-color: var(--mainColor);
+    color: white;
+    border: 1px solid var(--mainColor);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.openingLeftSide button:hover{
+    background: none;
+    color: var(--mainColor);
+}
+.openingRightSide img{
+    height: 650px;
+}
+.pageFollowingView{
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    background-color: #F8FFF7;
+    padding: var(--sectionPadding) ;
+}
+.followingRightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.followingRightSide h1{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.followingRightSide p{
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.followingRightSide ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.followingRightSide ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    gap: 10px;
+}
+.followingRightSide ul li i{
+    color: white;
+    padding: 3px;
+    background-color: var(--mainColor);
+    border-radius: 80%;
+}
+.followingRightSide button{
+    height: 55px;
+    width: 160px;
+    background: none;
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.followingRightSide button:hover{
+    background-color: var(--mainColor);
+    color: white;
+}
+@media only screen and (max-width: 1633px){
+    .pageOpeningView img{
+        height: 400px;
+    }
+    .pageFollowingView img{
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 1379px){
+    .pageOpeningView img{
+        height: 300px;
+    }
+    .pageFollowingView img{
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 1282px){
+    .pageOpeningView img{
+        display: none;
+    }
+    .pageOpeningView .openingLeftSide{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    :root{
+        --sectionPadding:3vh 5vh;
+    }
+}
+@media only screen and (max-width: 860px){
+    .navRightSide{
+        display: none;
+    }
+    .burgerMenuIcon{
+        display: contents;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 768px){
+    .pageOpeningView h1{
+        font-size: 28px;
+        width: 513px;
+    }
+    .pageOpeningView p{
+        width: 350px;
+    }
+    .pageFollowingView img{
+        height: 200px;
+    }
+    .pageFollowingView{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .pageFollowingView .followingRightSide{
+        align-items: center;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 526px){
+    .pageOpeningView h1{
+        font-size: 22px;
+        width: 300px;
+        text-align: center;
+    }
 }
